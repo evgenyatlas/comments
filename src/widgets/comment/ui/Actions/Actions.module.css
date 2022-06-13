@@ -1,0 +1,11 @@
+.Actions {
+    display: flex;
+    align-items: center;
+    background: white;
+    position: absolute;
+    bottom: -11px;
+    left: 10px;
+    padding: 9px 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 3%), 0 6px 6px rgb(0 0 0 / 9%);
+    border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+.ReplyBtn {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    margin-right: 20px;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 14px;
+}
+
+.ReplyBtn:hover {
+    opacity: 0.8;
+}
+
+.ReplyBtn>img {
+    height: 15px;
+    margin-right: 10px;
+}
+
+.ReplyBtn_close {}
+
+.ReplyBtn img {
+    width: 17px;
+
+}

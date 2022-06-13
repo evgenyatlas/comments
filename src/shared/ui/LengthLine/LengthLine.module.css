@@ -1,0 +1,26 @@
+.LengthLine {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.LengthLine__Arrow {
+    background: #434343;
+    width: 1px;
+    position: absolute;
+    left: 10px;
+    height: calc(100% - 25px);
+}
+
+.LengthLine__Arrow::before {
+    content: "";
+    background-image: var(--arrow-up-icon);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    margin-left: -7px;
+    bottom: -25px;
+}

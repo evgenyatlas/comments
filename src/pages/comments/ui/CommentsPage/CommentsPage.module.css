@@ -1,0 +1,29 @@
+.CommentsPage {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.CommentsPage__LoadMore {
+    margin-top: 15px;
+}
+
+.CommentsPage__Form {}
+
+.CommentsPage__Number {
+    margin-top: 20px;
+}
+
+.CommentsPage__ListComment {
+    margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+    .CommentsPage__Number {
+        margin-top: 10px;
+    }
+
+    .CommentsPage__ListComment {
+        margin-top: 10px;
+    }
+}

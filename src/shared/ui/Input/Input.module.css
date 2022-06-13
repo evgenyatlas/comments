@@ -1,0 +1,56 @@
+.Input_disable {
+    filter: blur(3px);
+    cursor: not-allowed;
+}
+
+.Input {
+    width: 100%;
+    border-radius: 3px;
+    background: rgb(234 234 234 / 36%);
+    padding: 9px 7px;
+}
+
+.Input>input {
+    appearance: none;
+    width: 100%;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Roboto Condensed";
+}
+
+.Input>input::placeholder {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+}
+
+.Input>input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+@media (max-width: 550px) {
+
+    .Input {
+        padding: 7px 5px;
+        width: 97%;
+    }
+
+    .Input>input {
+        font-size: 14px;
+    }
+
+}
