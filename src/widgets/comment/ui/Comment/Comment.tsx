@@ -8,10 +8,11 @@ import { ReplyMessageForm } from 'features/messageForm'
 export interface CommentProps {
     className?: string
     comment: IComment,
+    actions: Compo
 }
 
 
-export function Comment({ className, comment }: CommentProps) {
+export function Comment({ className, comment, actions }: CommentProps) {
     return (
         <>
             <div className={`${styles.Comment} ${className ? ' ' + className : ''} ${!!comment.parentId ? styles.Comment_nested : ''}`}>
