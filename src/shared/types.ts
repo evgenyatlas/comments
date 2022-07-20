@@ -27,4 +27,5 @@ export interface IApi {
     get(props: { limit?: number, skip?: number }): Promise<ICommentsPage>
     send(props: Pick<IComment, 'userName' | 'text' | 'parentId'>): Promise<IComment>
     rate(props: IRate): Promise<IComment>
+    auth(props: IUser): Promise<IUser>
 }

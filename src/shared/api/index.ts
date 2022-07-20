@@ -1,5 +1,6 @@
-import { IComment, ICommentsPage, IRate, IApi } from "../types"
+import { IComment, ICommentsPage, IRate, IApi, IUser } from "../types"
 import fakeApi from './fakeApi'
+import { fromObservable, Observable } from 'effector'
 
 class API {
     constructor(
@@ -19,7 +20,16 @@ class API {
         return this.api.rate(rate)
     }
 
+    auth = async (user: IUser) => {
+        return this.api.auth(user)
+    }
+
+    // subscribe(e) {
+    //     return ({ unsubscribe: () => undefined })
+    // }
+
     setApi(api: IApi) {
+        //reload all methods to get the neded data
         this.api = api
     }
 }

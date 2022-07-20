@@ -1,4 +1,4 @@
-import { IComment, IRate, IApi } from '../../types'
+import { IComment, IRate, IApi, IUser } from '../../types'
 import { getComment } from '../../lib/getComment'
 import * as localComments from './lib/localComments'
 import rawData from './data.json'
@@ -49,6 +49,10 @@ class Comment implements IApi {
             (a, b) => b.date - a.date
         )
 
+    }
+
+    async auth(user: IUser) {
+        return user
     }
 
     async get({ limit = 6, skip = 0 }: { limit?: number, skip?: number } = {}): Promise<{

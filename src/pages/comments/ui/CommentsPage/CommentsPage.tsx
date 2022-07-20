@@ -7,6 +7,7 @@ import { CommentList } from '../CommentList'
 import apiComment from 'shared/api'
 
 import styles from './CommentsPage.module.css'
+import { AuthForm } from 'features/auth'
 
 
 interface ICommentsPageProps {
@@ -23,6 +24,7 @@ export function CommentsPage({ api }: ICommentsPageProps) {
 
     return (
         <div className={styles.CommentsPage}>
+            <AuthForm />
             <MessageForm />
             <NumberComment className={styles.CommentsPage__Number} />
             <CommentList className={styles.CommentsPage__ListComment} />

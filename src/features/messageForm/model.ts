@@ -1,5 +1,5 @@
 import { createEffect, createEvent, createStore, forward, sample } from "effector"
-import { $userName } from "../../entities/user"
+import { $userName } from "../../entities/viewer"
 import { addComment } from "../../entities/comment"
 import api from "../../shared/api"
 import { IComment } from '../../shared/types'

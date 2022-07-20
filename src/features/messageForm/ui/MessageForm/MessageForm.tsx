@@ -3,7 +3,7 @@ import styles from './MessageForm.module.css'
 import { submit, sendFx } from '../../model'
 import { useStore } from 'effector-react'
 import { Spinner } from '../../../../shared/ui/Spinner'
-import { $logged } from 'entities/user'
+import { $logged } from 'entities/viewer'
 import { useActiveReply } from '../../lib/useActiveReply'
 import { Input } from 'shared/ui/Input'
 

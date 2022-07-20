@@ -1,16 +1,16 @@
 import { IComment } from 'shared/types'
 import { ReplyBtn } from 'features/messageForm'
 import { Rate } from 'features/rate'
-import styles from './Actions.module.css'
+import styles from './ActionsComment.module.css'
 
 interface ActionsProps {
     className?: string
     comment: IComment
 }
 
-export function Actions({ comment }: ActionsProps) {
+export function ActionsComment({ comment }: ActionsProps) {
     return (
-        <div className={styles.Actions}>
+        <div className={styles.ActionsComment}>
             {!comment.parentId && <ReplyBtn commentId={comment.id} />}
             <Rate comment={comment} />
         </div>
